@@ -1,23 +1,18 @@
-var Plugin = require("bit-bundler-utils/plugin");
-var utils = require("belty");
+var PluginBuilder = require("bit-plugin-builder");
 var umd_deps = require("deps-bits");
 
 var defaults = {
   match: {
     path: /[\w]+\.(js)$/
-  }
+  },
+  dependency: umd_deps
 };
 
-function dependencyJavaScript(meta, options) {
-  return umd_deps(meta, options);
-}
-
 function jsPlugin(options) {
-  var plugin = Plugin.create(utils.merge({}, defaults, options));
-
-  return Plugin.configure(plugin, {
-    dependency: dependencyJavaScript
-  });
+  return PluginBuilder
+    .create(defaults)
+    .configure(options)
+    .build();
 }
 
 module.exports = jsPlugin;
