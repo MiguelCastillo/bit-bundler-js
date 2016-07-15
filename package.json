@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/MiguelCastillo/bit-loader-js",
   "dependencies": {
-    "bit-plugin-builder": "^1.0.0",
+    "bit-plugin-builder": "^1.1.0",
     "deps-bits": "^0.1.2"
   }
 }
