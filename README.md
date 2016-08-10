@@ -1,4 +1,4 @@
-deprecated. use [bit-loader-npm](https://github.com/MiguelCastillo/bit-loader-npm)
+## deprecated. use [bit-loader-npm](https://github.com/MiguelCastillo/bit-loader-npm)
 
 # bit-loader-js
 > bit-loader plugin for JavaScript
