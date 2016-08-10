@@ -1,10 +1,12 @@
 var PluginBuilder = require("bit-plugin-builder");
-var umd_deps = require("deps-bits");
+var pullDeps = require("pulling-deps");
 
 var defaults = {
   extensions: ["js"],
-  dependency: function(m) {
-    return umd_deps(m, { amd: false });
+  dependency: function(data) {
+    return {
+      deps: pullDeps(data.source, { amd: false }).dependencies
+    };
   }
 };
 

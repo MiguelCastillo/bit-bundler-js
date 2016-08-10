@@ -23,7 +23,7 @@
   "homepage": "https://github.com/MiguelCastillo/bit-loader-js",
   "dependencies": {
     "bit-plugin-builder": "^1.1.1",
-    "deps-bits": "^0.1.2"
+    "pulling-deps": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^3.2.2"
