@@ -3,7 +3,9 @@ var umd_deps = require("deps-bits");
 
 var defaults = {
   extensions: ["js"],
-  dependency: umd_deps
+  dependency: function(m) {
+    return umd_deps(m, { amd: false });
+  }
 };
 
 function jsPlugin(options) {
