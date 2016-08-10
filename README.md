@@ -1,21 +1,55 @@
 # bit-loader-js
-> bit-loader plugin for JavaScript
+> bit-loader plugins for managing dependencies with cjs and import syntax
 
-The output of this plugin factory is a configuration Object that can be used as a [bit-loader](https://github.com/MiguelCastillo/bit-loader) plugin.
+by default, bit-loader-js will only process require and import syntax. You can optionally enable amd syntax.
 
-### Example
+## Options
 
-#### Simple plugin configuration with Babel transform
+- amd: boolean. defaults to false. Flag to enable/disable amd syntax
+- cjs: boolean. defaults to true. Flag to enable/disable cjs syntax
+
+
+## Example
+
+### Plugin configuration with bit-bundler
 
 ``` javascript
-  var jsPlugin = require("bit-loader-js");
-  var babelbits = require("babel-bits");
+var BitBundler = require("bit-bundler");
+var jsPlugin = require("bit-loader-js");
 
-  var pluginConfig = jsPlugin({
-    transform: babelbits
-  });
+var bundler = new Bitbundler({
+  loader: {
+    plugins: [
+      jsPlugin()
+    ]
+  }
+});
 ```
 
-### License
+### With amd syntax enabled
+
+``` javascript
+var BitBundler = require("bit-bundler");
+var jsPlugin = require("bit-loader-js");
+
+var bundler = new Bitbundler({
+  loader: {
+    plugins: [
+      jsPlugin({
+        amd: true
+      })
+    ]
+  }
+});
+```
+
+
+## Install
+
+```
+$ npm install bit-loader-js --save
+```
+
+## License
 
 Licensed under MIT

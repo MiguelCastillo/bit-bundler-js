@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/MiguelCastillo/bit-loader-js",
   "dependencies": {
+    "belty": "^4.0.3",
     "bit-plugin-builder": "^1.1.1",
     "pulling-deps": "^0.2.0"
   },
