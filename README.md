@@ -1,5 +1,3 @@
-## deprecated. use [bit-loader-npm](https://github.com/MiguelCastillo/bit-loader-npm)
-
 # bit-loader-js
 > bit-loader plugin for processing JavaScript dependencies with cjs and import syntax
 
