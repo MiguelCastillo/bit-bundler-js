@@ -1,5 +1,5 @@
 # bit-loader-js
-> bit-loader plugin for processing JavaScript dependencies with cjs and import syntax
+bit-loader plugin for processing JavaScript dependencies with cjs and import syntax
 
 by default, bit-loader-js will only process require and import syntax. You can optionally enable amd syntax.
 
