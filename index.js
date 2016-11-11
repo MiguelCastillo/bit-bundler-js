@@ -1,8 +1,7 @@
-var PluginBuilder = require("bit-plugin-builder");
 var pullDeps = require("pulling-deps");
 var utils = require("belty");
 
-function jsPlugin(options) {
+function buildPlugin(options, builder) {
   var depsOptions = utils.extend({
     amd: false,
     cjs: true
@@ -17,10 +16,13 @@ function jsPlugin(options) {
     }
   };
 
-  return PluginBuilder
-    .create(defaults)
-    .configure(options)
-    .build();
+  return builder
+    .configure(defaults)
+    .configure(options);
 }
 
-module.exports = jsPlugin;
+module.exports = function factory(options) {
+  return function(builder) {
+    return buildPlugin(options, builder);
+  };
+};
