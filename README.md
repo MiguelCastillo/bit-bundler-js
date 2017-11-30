@@ -1,4 +1,6 @@
 # bit-loader-js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MiguelCastillo/bit-loader-js.svg)](https://greenkeeper.io/)
 bit-loader plugin for processing JavaScript dependencies with cjs and import syntax
 
 by default, bit-loader-js will only process require and import syntax. You can optionally enable amd syntax.
