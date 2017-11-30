@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/MiguelCastillo/bit-loader-js",
   "dependencies": {
-    "belty": "^4.0.3",
-    "pulling-deps": "^0.2.0"
+    "belty": "^5.1.0",
+    "pulling-deps": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.2"
+    "eslint": "^4.12.1"
   }
 }
