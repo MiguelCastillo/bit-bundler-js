@@ -17,8 +17,8 @@ by default, bit-loader-js will only process require and import syntax. You can o
 ### Plugin configuration with bit-bundler
 
 ``` javascript
-var BitBundler = require("bit-bundler");
-var jsPlugin = require("bit-loader-js");
+var BitBundler = require("@bit/bundler");
+var jsPlugin = require("@bit/loader-js");
 
 var bundler = new Bitbundler({
   loader: {
@@ -32,8 +32,8 @@ var bundler = new Bitbundler({
 ### With amd syntax enabled
 
 ``` javascript
-var BitBundler = require("bit-bundler");
-var jsPlugin = require("bit-loader-js");
+var BitBundler = require("@bit/bundler");
+var jsPlugin = require("@bit/loader-js");
 
 var bundler = new Bitbundler({
   loader: {
@@ -50,7 +50,7 @@ var bundler = new Bitbundler({
 ## Install
 
 ```
-$ npm install bit-loader-js --save
+$ npm install @bit/loader-js --save
 ```
 
 ## License
