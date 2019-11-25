@@ -26,6 +26,6 @@
     "pulling-deps": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.12.1"
+    "eslint": "^6.7.1"
   }
 }
